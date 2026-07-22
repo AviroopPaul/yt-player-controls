@@ -1,0 +1,123 @@
+.ytxc-controls {
+  display: inline-flex !important;
+  align-items: center !important;
+  height: 100% !important;
+  vertical-align: top !important;
+}
+
+.ytp-button.ytxc-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center !important;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.ytp-button.ytxc-btn:hover {
+  opacity: 1;
+}
+
+.ytp-button.ytxc-btn svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.ytp-button.ytxc-text {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1 !important;
+}
+
+.ytp-button.ytxc-minus,
+.ytp-button.ytxc-plus {
+  width: 22px !important;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.ytp-button.ytxc-speed {
+  width: auto !important;
+  min-width: 46px !important;
+  padding: 0 2px !important;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ytp-button.ytxc-btn.ytxc-on {
+  color: #3ea6ff;
+  opacity: 1;
+}
+
+.ytp-big-mode .ytp-button.ytxc-btn {
+  width: 46px !important;
+}
+
+.ytp-big-mode .ytp-button.ytxc-btn svg {
+  width: 27px;
+  height: 27px;
+}
+
+.ytp-big-mode .ytp-button.ytxc-minus,
+.ytp-big-mode .ytp-button.ytxc-plus {
+  width: 30px !important;
+  font-size: 25px;
+}
+
+.ytp-big-mode .ytp-button.ytxc-speed {
+  min-width: 60px !important;
+  font-size: 17px;
+}
+
+.ytxc-fill-active {
+  overflow: hidden !important;
+}
+
+.ytxc-tooltip {
+  position: absolute;
+  background: rgba(28, 28, 28, 0.9);
+  color: #eee;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 2147483647;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.ytxc-tooltip.ytxc-tooltip-visible {
+  opacity: 1;
+}
+
+.ytp-big-mode .ytxc-tooltip {
+  font-size: 17px;
+  padding: 7px 11px;
+}
+
+.ytxc-toast {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.78);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 2147483647;
+}
+
+.ytxc-toast.ytxc-toast-visible {
+  opacity: 1;
+}
