@@ -210,21 +210,6 @@
   .card p { color: var(--text-dim); font-size: 15.5px; }
   .card code { font-family: var(--mono); font-size: 13px; color: var(--red-soft); background: rgba(255,0,51,0.08); padding: 2px 7px; border-radius: 5px; }
 
-  /* verified strip */
-  .verified { padding: 70px 0; border-top: 1px solid var(--line); text-align: center; }
-  .verified .big {
-    font-family: var(--display); font-size: clamp(50px, 8vw, 96px); line-height: 1;
-    color: var(--red);
-    letter-spacing: -0.03em;
-  }
-  .verified .what { font-family: var(--mono); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-dim); margin-top: 10px; }
-  .check-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-top: 30px; max-width: 800px; margin-left: auto; margin-right: auto; }
-  .check {
-    font-family: var(--mono); font-size: 12px; color: var(--text-dim);
-    border: 1px solid var(--line); border-radius: 99px; padding: 6px 14px;
-  }
-  .check::before { content: "✓ "; color: #3ddc84; }
-
   /* install */
   .install { padding: 90px 0; border-top: 1px solid var(--line); }
   .steps { counter-reset: step; margin-top: 40px; display: grid; gap: 0; }
@@ -348,22 +333,6 @@
     <div style="margin-top: 26px" class="frame">
       <div class="frame-bar"><i></i><i></i><i></i><span>tooltips anchored to the glyph, not the box</span></div>
       <img src="assets/shot-tooltip.png" alt="Tooltip rendered perfectly centered above the speed control" width="559" height="109">
-    </div>
-  </div>
-</section>
-
-<section class="verified">
-  <div class="wrap reveal">
-    <div class="big">21/21</div>
-    <div class="what">Playwright checks passed against real YouTube</div>
-    <div class="check-row">
-      <span class="check">controls injected</span>
-      <span class="check">fill removes bars in fullscreen</span>
-      <span class="check">speed steps and resets</span>
-      <span class="check">clipboard gets youtu.be link</span>
-      <span class="check">PiP enters and exits</span>
-      <span class="check">tooltips centered on glyph</span>
-      <span class="check">survives hostile page CSS</span>
     </div>
   </div>
 </section>
