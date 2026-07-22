@@ -85,21 +85,12 @@
       radial-gradient(52% 42% at 72% 6%, rgba(255, 0, 51, 0.16), transparent 68%),
       radial-gradient(40% 34% at 12% 30%, rgba(255, 95, 87, 0.07), transparent 70%);
   }
-  .kicker {
-    display: inline-flex; align-items: center; gap: 10px;
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--text-dim);
-    border: 1px solid var(--line); border-radius: 99px; padding: 7px 16px;
-    animation: rise .7s .05s cubic-bezier(.2,.7,.2,1) both;
-  }
-  .kicker .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--red); box-shadow: 0 0 10px var(--red); animation: pulse 2.2s infinite; }
-  @keyframes pulse { 50% { opacity: .35; } }
   header h1 {
     font-family: var(--display);
     font-size: clamp(44px, 7.2vw, 88px);
     line-height: 0.98;
     letter-spacing: -0.025em;
-    margin: 30px 0 26px;
+    margin: 0 0 26px;
     max-width: 15ch;
     animation: rise .7s .15s cubic-bezier(.2,.7,.2,1) both;
   }
@@ -123,13 +114,6 @@
   .btn.primary:hover { background: #ff1a47; box-shadow: 0 10px 40px rgba(255, 0, 51, 0.5); transform: translateY(-1px); }
   .btn.ghost { color: var(--text); border: 1px solid var(--line); }
   .btn.ghost:hover { border-color: rgba(255,255,255,0.35); }
-  .hero-logo {
-    position: absolute; right: 4%; top: 150px;
-    width: clamp(120px, 17vw, 200px);
-    filter: drop-shadow(0 24px 60px rgba(255,0,51,0.25));
-    animation: float 7s ease-in-out infinite, rise .8s .3s cubic-bezier(.2,.7,.2,1) both;
-  }
-  @keyframes float { 50% { transform: translateY(-14px) rotate(2deg); } }
   @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
 
   .hero-shot { margin-top: 70px; animation: rise .8s .45s cubic-bezier(.2,.7,.2,1) both; }
@@ -174,7 +158,6 @@
   .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
   @media (max-width: 820px) {
     .duo { grid-template-columns: 1fr; }
-    .hero-logo { display: none; }
   }
 
   /* fill toggle demo */
@@ -295,14 +278,11 @@
 
 <header>
   <div class="wrap">
-    <span class="kicker"><span class="dot"></span>Chrome extension · Manifest V3 · free</span>
     <h1>The four buttons YouTube forgot to put on the <em>player bar.</em></h1>
     <p class="sub">Fill the screen to kill black bars. Step playback speed past 2x. Pop picture in picture. Copy a clean link. All of it one click away, right where your cursor already is.</p>
     <div class="cta-row">
       <a class="btn primary" href="https://github.com/AviroopPaul/yt-player-controls/releases/latest/download/yt-player-controls.zip">⤓ Download .zip</a>
-      <a class="btn ghost" href="https://github.com/AviroopPaul/yt-player-controls">View source on GitHub</a>
     </div>
-    <img class="hero-logo" src="assets/logo.svg" alt="YT Player Bar Controls logo">
     <div class="hero-shot frame">
       <div class="frame-bar"><i></i><i></i><i></i><span>youtube.com · the player bar, upgraded</span></div>
       <img src="assets/shot-controls.png" alt="The extension's fill, speed, picture in picture and copy link buttons injected into the YouTube player bar" width="559" height="109">
